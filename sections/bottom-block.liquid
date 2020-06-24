@@ -1,0 +1,45 @@
+
+
+    <div class="w-layout-grid grid-2">
+      <div id="w-node-d16fba37b4da-811a4efc" class="leftbox"><img src="{{ section.settings.side_home | img_url: 'large' }}" id="Sweatshirt" alt="{{ section.settings.side_home.alt }}" class="image-46"></div>
+      <div id="w-node-8109da36869c-811a4efc" class="div-block-316">
+        <div class="div-block-318">
+          <h1 class="heading-88">BE THE FIRST TO KNOW</h1>
+          <div id="Know-Text" class="know-text">{{ section.settings.side_text }}</div>
+          <div class="div-block-319">
+            <div class="w-form">
+              <form id="email-form" name="email-form" data-name="Email Form" class="form-4"><input type="email" class="formfield w-input" maxlength="256" name="email" data-name="email" placeholder="EMAIL" id="email-3"><input type="text" class="formfield w-input" maxlength="256" name="ZIP-CODE" data-name="ZIP CODE" placeholder="ZIP CODE" id="ZIP-CODE">
+                <div class="text-block-127">By submitting this form I agree to receive news, tour dates and special offers from Eminem. <br>By submitting this form you agree to the Universal Group Music Policy.</div><input type="submit" value="SUBSCRIBE" data-wait="Please wait..." class="submit-button-4 w-button"></form>
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+{% schema %}
+{
+  "name": "bottom-block",
+  "class": "bottomblock",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "side_text",
+      "label": "Side Text",
+      "default": "Sign up for the official Eminem Store list and receive updates on merch drops, exclusive bundles. and other offerings."
+    },
+    {
+      "type": "image_picker",
+      "id": "side_home",
+      "label": "Side Home"
+    }
+  ]
+}
+{% endschema %}
